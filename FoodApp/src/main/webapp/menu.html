@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input[type="text"], input[type="number"], input[type="radio"] {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 3px;
+            font-size: 13px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            margin-top: 5px;
+            width: 100%;
+            padding: 8px;
+            background-color: #a7285f;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .submit-btn:hover {
+            background-color: #a7285f;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Menu Form</h2>
+        <form action="addMenu" method="post">
+            <div class="form-group">
+                <label for="menu_id">Menu ID</label>
+                <input type="number" name="menu_id" id="menu_id">
+            </div>
+            <div class="form-group">
+                <label for="restaurant_id">Restaurant ID</label>
+                <input type="number" name="restaurant_id" id="restaurant_id">
+            </div>
+            <div class="form-group">
+                <label for="item_name">Item Name</label>
+                <input type="text" name="item_name" id="item_name">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description">
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price">
+            </div>
+            <div class="form-group radio-group">
+                <label for="isActive">Is Active:</label>
+                <input type="radio" name="isActive" value="1" id="open">
+                <label for="open">Open</label>
+                <input type="radio" name="isActive" value="0"id="close">
+                <label for="close">Close</label>
+            </div>
+            <div class="form-group">
+                <label for="imgpath">Image Path</label>
+                <input type="file" name="imgpath" id="imgpath">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="submit-btn" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

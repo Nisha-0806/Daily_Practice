@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App - Navigation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(foo6.webp);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        .nav-container {
+            background: transparent; /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background: #ff3b30;
+            transform: translateY(-3px);
+        }
+
+        .btn:active {
+            background: #d42a1b;
+            transform: translateY(1px);
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .description {
+            margin: 20px 0;
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <h1>FoodiesClub</h1>
+        <p class="description">Discover delicious recipes and track your meal plans. Choose an option to get started!</p>
+        <div class="nav-buttons">
+            <a href="sample.html" class="btn">Login</a>
+            <a href="register.html" class="btn">Register</a>
+        </div>
+    </div>
+</body>
+</html>
